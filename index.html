@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+
+  <title>Portfolio</title>
+  <script src="all.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="all.css"/>
+  
+
+  <style>
+  
+  @media screen and (min-width:700px){
+
+.profile{
+  display: grid;
+  grid-template-columns:1fr 1fr ;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5px;
+}
+
+.frontend .col-sm-5{
+    height: 275px;
+  }
+
+  .backend .col-sm-5{
+    height: 168px;
+  }
+
+  }
+  
+  body{
+	background-color:rgb(35,38,57);
+	color:white;
+	
+}
+
+.container{width:90%;
+margin:auto;
+}
+
+.profile{
+	background-image:url(free2.jpg);
+  background-size: cover;
+padding:10px;
+margin-bottom:35px;
+box-shadow: 2px 2px 4px 4px rgba(25,38,57,0.5);
+}
+span {color:rgb(240, 161, 43);
+font-size:1.3em;
+font-family:monospace;
+}
+
+#profilePhoto{border-radius:50%;
+margin: auto;
+display: block;
+box-shadow: 2px 2px 4px 4px rgba(146, 163, 238, 0.5);
+}
+
+#skills{padding:20px;}
+
+.col-sm-5,.projects{
+  background-color:rgb(88, 97, 167);
+  padding: 20px;
+  box-shadow: 2px 2px 4px 4px rgba(25,38,57,0.5);
+}
+
+.col-sm-4 h4{
+  padding-bottom:80px;
+}
+
+ul{list-style-type:none;
+padding-left:10px;
+}
+
+li{
+  background-color:rgb(212, 127, 0);
+  margin-bottom:19px;
+  box-shadow: 2px 2px 4px 4px rgba(25,38,57,0.5);
+}
+
+h4{text-align:center;
+margin-top:35px;
+}
+
+.cover{object-fit:cover;
+  box-shadow: 2px 2px 4px 4px rgba(25,38,57,0.5);}
+
+a{display:block;
+text-decoration:none;
+color:rgb(115,133,252);
+}
+
+p a{display:inline;}
+
+.projects a{padding-bottom:10px;
+font-style:italic;
+color:white;
+}
+
+footer{ background-color:rgb(63,66,90);
+  padding: 20px;
+  margin-top:15px 
+  
+  }
+  
+ footer i{
+      color:navy;
+  }
+  
+  button{border-radius:12px;
+  text-align:center;
+  padding:5px;
+  border:none;
+  }
+
+
+
+</style>
+</head>
+<body>
+<div class ="container">
+  <div class="row profile">
+
+    <div class="col-sm-4">
+      <img src="photo.jpg" alt="my photo" id="profilePhoto"/>
+          </div>
+    <div class="col-sm-8">
+      <h1>Hi, I'm <span>Kabelo Tshehla</span></h1>
+      <h2>Web Developer</h2>
+      <p>I'm an emerging web developer with distinguished front-end and backend skills, topped with an aptitude for keeping abreast with new technologies. I am currently on a web developer program with <a href="" target="blank">Codex</a>.</p>
+          </div>
+
+
+    </div>
+     <h2 id="skills">A Glimpse Of My Skills</h2>
+  <div class="row frontend">
+   
+    <div class="col-sm-4">
+    <img src="front.png" alt="front-end" class="cover"/>
+    </div>
+    <div class="col-sm-5 ">
+    <h3>My Front-end  Skills</h3>
+    <p>My front-end skills are a work-in-progress, built upon hours of practice on real projects, mentorship and a consistent learning culture. So far, I know enough to create responsive and user friendly interfaces. <p>
+    </div>
+    <div class="col-sm-3">
+    <h4>Skills</h4>
+    <ul>
+    <li><i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>HTML 5</li>
+    <li><i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>CSS 3</li>
+    <li><i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>JavaScript</li>
+    <li><i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>Git</li>
+    </ul>
+    </div>
+    </div>
+  
+ <div class="row backend">
+   
+    <div class="col-sm-4">
+    <img src="back.png" alt="back-end" class="cover"/>
+    </div>
+    <div class="col-sm-5 ">
+    <h3>My Back-end  Skills</h3>
+    <p>I am yet to learn any backend skills. I hope to learn Nodejs,PHP and Java.<p>
+    </div>
+    <div class="col-sm-3">
+    <h4>Skills</h4>
+    <ul>
+    <li><i class="fa-solid fa-marker"></i>To be updated</li>
+    <li><i class="fa-solid fa-marker"></i>To be updated</li>
+    <li><i class="fa-solid fa-marker"></i>To be updated</li>
+    </ul>
+    </div>
+  </div>
+<div class="projects">
+<h2 >My projects so far</h2>
+
+<button type="button" class="btn" style="background-color:rgb(243,157,100);"><a href="" target="blank">Java Calculator</a></button>
+<button type="button" class="btn" style="background-color:rgb(71,8,107);"><a href="" target="blank">Pizza Pamphlet</a></button>
+<button type="button" class="btn" style="background-color:rgb(12,107,8);"><a href="" target="blank">Personal Webpage</a></button>
+<button type="button" class="btn"style="background-color:rgb(80,127,235);"> <a href="https://kaydrew.github.io/website/" target="blank">Skills Website</a></button>
+</div>
+ </div> 
+
+</body>
+<footer>
+<a href="" target="blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+<a href="" target="blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
+<a href="" target="blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+<p style="color:black;">copyright© 2023</p>
+</footer>
+
+</html>
