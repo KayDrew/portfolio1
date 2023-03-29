@@ -5,6 +5,25 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .profile{
+	background-color:rgb(35,38,57);
+padding:20px;
+margin-bottom:35px;
+box-shadow: 2px 2px 4px 4px rgba(25,38,57,0.5);
+}
+
+span {color:rgb(240, 161, 43);
+  font-size:1.1em;
+  font-family:monospace;
+  }
+
+  #profilePhoto{border-radius:50%;
+    margin: auto;
+    display: block;
+    box-shadow: 1px 1px 3px 3px #f6f7fcbb;
+    }
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -50,7 +69,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color:white;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -68,7 +87,7 @@ hr:not([size]) {
   height: 1px;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -139,13 +158,11 @@ address {
   line-height: inherit;
 }
 
-ol,
-ul {
+ol {
   padding-left: 2rem;
 }
 
 ol,
-ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -599,9 +616,8 @@ progress {
   width: 90%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
-  box-shadow: 1px 1px 3px 3px rgb(151, 151, 245);
+  width:90%;
+  margin:auto;
 }
 
 @media (min-width: 576px) {
@@ -5362,11 +5378,14 @@ textarea.form-control-lg {
 .modal-xl {
     max-width: 800px;
   }
+
+
 }
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 1140px;
   }
+
 }
 .modal-fullscreen {
   width: 100vw;
@@ -5390,6 +5409,11 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 575.98px) {
+
+  .cover{
+    padding-bottom: 30px;
+  }
+
   .modal-fullscreen-sm-down {
     width: 100vw;
     max-width: none;
@@ -5412,6 +5436,10 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 767.98px) {
+  .cover{
+    padding-bottom: 30px;
+  }
+
   .modal-fullscreen-md-down {
     width: 100vw;
     max-width: none;
@@ -10834,5 +10862,115 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.backend h4, .frontend h4,#skills{
+color: rgba(0,0,0,0.7);
+text-align: center;
+}
+
+
+.skill-col{
+  background-color:rgb(35,38,57);
+  padding: 20px;
+
+}
+
+
+.projects{
+  background-color:rgb(115,133,252);
+  padding: 20px;
+}
+
+.projects h2{
+padding-bottom: 20px;
+}
+
+#skills{
+
+  margin-bottom: 20px;
+}
+
+.col-sm-4 h4{
+  padding-bottom:80px;
+}
+
+.profile h2{
+  color:rgb(115,133,252);
+}
+
+ul{list-style-type:none;
+  padding-left:10px;
+  }
+  
+  li{
+    background-color:rgb(35,38,57);
+  margin-bottom: 15px;
+   
+  }
+
+
+  .projects h2{
+ padding-bottom: 35px;
+  }
+
+  .backend,.frontend{
+    margin-bottom: 15px;
+  }
+  
+  h4{text-align:center;
+
+  }
+
+
+  a{display:block;
+    text-decoration:none;
+    color:rgb(115,133,252);
+    }
+    
+    p a{display:inline;}
+
+ 
+    
+    .projects a{padding-bottom:10px;
+    font-style:italic;
+    color:white;
+    }
+    
+    footer{background-color: rgb(30,30,50);
+      padding: 20px;
+      margin-top:15px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+
+
+      footer i{
+        color:white;
+      font-size: 35px;
+    }
+
+    h1{
+      margin-bottom: 25px;
+    }
+
+.cover{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+h4{
+  margin-bottom:-35px;
+  margin-top: 20px;
+}
+
+footer p{
+  padding-top: 30px;
+  font-family:serif;
+  font-size:15px;
+}
+
+
 
 /*# sourceMappingURL=bootstrap.css.map */
